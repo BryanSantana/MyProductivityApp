@@ -8,6 +8,7 @@ export default function DayPlannerScreen() {
           <AntDesign name={iconName} size={30} color="#000" />
         </TouchableOpacity>
     );
+    //Takes in a true or false value and then accordingly increments or decrements
     const incrementDate = (increment) => {
         setDate(new Date(date.setDate(date.getDate() + (increment ? 1 : -1))));
     };
